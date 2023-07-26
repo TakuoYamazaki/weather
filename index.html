@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>天気予報サイト</title>
+</head>
+<body>
+  <div>
+    <h2>天気予報</h2>
+    <h3><span>地域を選択</span></h3><br>
+    <form name="form1">
+      <div id="region">
+        <p>道北</p>
+          <input type="checkbox" name="city" id="011000" value="稚内">稚内
+          <input type="checkbox" name="city" id="012010" value="旭川">旭川
+          <input type="checkbox" name="city" id="012020" value="留萌">留萌
+        <p>道東</p>
+          <input type="checkbox" name="city" id="013010" value="網走">網走
+          <input type="checkbox" name="city" id="013020" value="北見">北見
+          <input type="checkbox" name="city" id="013030" value="紋別">紋別
+          <input type="checkbox" name="city" id="014010" value="根室">根室
+          <input type="checkbox" name="city" id="014020" value="釧路">釧路
+          <input type="checkbox" name="city" id="014030" value="帯広">帯広  
+        <p>道南</p>
+          <input type="checkbox" name="city" id="015010" value="室蘭">室蘭
+          <input type="checkbox" name="city" id="015020" value="浦河">浦河
+          <input type="checkbox" name="city" id="017010" value="函館">函館
+          <input type="checkbox" name="city" id="017020" value="江差">江差
+        <p>道央</p>
+          <input type="checkbox" name="city" id="016010" value="札幌">札幌
+          <input type="checkbox" name="city" id="016020" value="岩見沢">岩見沢
+          <input type="checkbox" name="city" id="016030" value="倶知安">倶知安
+        <p>青森県</p>
+          <input type="checkbox" name="city" id="020010" value="青森">青森
+          <input type="checkbox" name="city" id="020020" value="むつ">むつ
+          <input type="checkbox" name="city" id="020030" value="八戸">八戸
+        <p>岩手県</p>
+          <input type="checkbox" name="city" id="030010" value="盛岡">盛岡
+          <input type="checkbox" name="city" id="030020" value="宮古">宮古
+          <input type="checkbox" name="city" id="030030" value="大船渡">大船渡
+        <p>宮城県</p>
+          <input type="checkbox" name="city" id="040010" value="仙台">仙台
+          <input type="checkbox" name="city" id="040020" value="白石">白石
+        <p>秋田県</p>
+          <input type="checkbox" name="city" id="050010" value="秋田">秋田
+          <input type="checkbox" name="city" id="050020" value="横手">横手
+        <p>山形県</p>
+          <input type="checkbox" name="city" id="060010" value="山形">山形
+          <input type="checkbox" name="city" id="060020" value="米沢">米沢
+          <input type="checkbox" name="city" id="060030" value="酒田">酒田
+          <input type="checkbox" name="city" id="060040" value="新庄">新庄
+        <p>福島県</p>
+          <input type="checkbox" name="city" id="070010" value="福島">福島
+          <input type="checkbox" name="city" id="070020" value="小名浜">小名浜
+          <input type="checkbox" name="city" id="070030" value="若松">若松
+        <p>茨城県</p>
+          <input type="checkbox" name="city" id="080010" value="水戸">水戸
+          <input type="checkbox" name="city" id="080020" value="土浦">土浦
+        <p>栃木県</p>
+          <input type="checkbox" name="city" id="090010" value="宇都宮">宇都宮
+          <input type="checkbox" name="city" id="090020" value="大田原">大田原
+        <p>群馬県</p>
+          <input type="checkbox" name="city" id="100010" value="前橋">前橋
+          <input type="checkbox" name="city" id="100020" value="みなかみ">みなかみ
+        <p>埼玉県</p>
+          <input type="checkbox" name="city" id="110010" value="さいたま">さいたま
+          <input type="checkbox" name="city" id="110020" value="熊谷">熊谷
+          <input type="checkbox" name="city" id="110030" value="秩父">秩父
+        <p>千葉県</p>
+          <input type="checkbox" name="city" id="120010" value="千葉">千葉
+          <input type="checkbox" name="city" id="120020" value="銚子">銚子
+          <input type="checkbox" name="city" id="120030" value="館山">館山
+        <p>東京都</p>
+          <input type="checkbox" name="city" id="130010" value="東京">東京
+          <input type="checkbox" name="city" id="130020" value="大島">大島
+          <input type="checkbox" name="city" id="130030" value="八丈島">八丈島
+          <input type="checkbox" name="city" id="130040" value="父島">父島
+        <p>神奈川県</p>
+          <input type="checkbox" name="city" id="140010" value="横浜">横浜
+          <input type="checkbox" name="city" id="140020" value="小田原">小田原
+        <p>新潟県</p>
+          <input type="checkbox" name="city" id="150010" value="新潟">新潟
+          <input type="checkbox" name="city" id="150020" value="長岡">長岡
+          <input type="checkbox" name="city" id="150030" value="高田">高田
+          <input type="checkbox" name="city" id="150040" value="相川">相川
+        <p>富山県</p>
+          <input type="checkbox" name="city" id="160010" value="富山">富山
+          <input type="checkbox" name="city" id="160020" value="伏木">伏木
+        <p>石川県</p>
+          <input type="checkbox" name="city" id="170010" value="金沢">金沢
+          <input type="checkbox" name="city" id="170020" value="輪島">輪島
+        <p>福井県</p>
+          <input type="checkbox" name="city" id="180010" value="福井">福井
+          <input type="checkbox" name="city" id="180020" value="敦賀">敦賀
+        <p>山梨県</p>
+          <input type="checkbox" name="city" id="190010" value="甲府">甲府
+          <input type="checkbox" name="city" id="190020" value="河口湖">河口湖
+        <p>長野県</p>
+          <input type="checkbox" name="city" id="200010" value="長野">長野
+          <input type="checkbox" name="city" id="200020" value="松本">松本
+          <input type="checkbox" name="city" id="200030" value="飯田">飯田
+        <p>岐阜県</p>
+          <input type="checkbox" name="city" id="210010" value="岐阜">岐阜
+          <input type="checkbox" name="city" id="210020" value="高山">高山
+        <p>静岡県</p>
+          <input type="checkbox" name="city" id="220010" value="静岡">静岡
+          <input type="checkbox" name="city" id="220020" value="網代">網代
+          <input type="checkbox" name="city" id="220030" value="三島">三島
+          <input type="checkbox" name="city" id="220040" value="浜松">浜松
+        <p>愛知県</p>
+          <input type="checkbox" name="city" id="230010" value="名古屋">名古屋
+          <input type="checkbox" name="city" id="230020" value="豊橋">豊橋
+        <p>三重県</p>
+          <input type="checkbox" name="city" id="240010" value="津">津
+          <input type="checkbox" name="city" id="240020" value="尾鷲">尾鷲
+        <p>滋賀県</p>
+          <input type="checkbox" name="city" id="250010" value="大津">大津
+          <input type="checkbox" name="city" id="250020" value="彦根">彦根
+        <p>京都府</p>
+          <input type="checkbox" name="city" id="260010" value="京都">京都
+          <input type="checkbox" name="city" id="260020" value="舞鶴">舞鶴
+        <p>大阪府</p>
+          <input type="checkbox" name="city" id="270000" value="大阪">大阪
+        <p>兵庫県</p>
+          <input type="checkbox" name="city" id="280010" value="神戸">神戸
+          <input type="checkbox" name="city" id="280020" value="豊岡">豊岡
+        <p>奈良県</p>
+          <input type="checkbox" name="city" id="290010" value="奈良">奈良
+          <input type="checkbox" name="city" id="290020" value="風屋">風屋
+        <p>和歌山県</p>
+          <input type="checkbox" name="city" id="300010" value="和歌山">和歌山
+          <input type="checkbox" name="city" id="300020" value="潮岬">潮岬
+        <p>鳥取県</p>
+          <input type="checkbox" name="city" id="310010" value="鳥取">鳥取
+          <input type="checkbox" name="city" id="310020" value="米子">米子
+        <p>島根県</p>
+          <input type="checkbox" name="city" id="320010" value="松江">松江
+          <input type="checkbox" name="city" id="320020" value="浜田">浜田
+          <input type="checkbox" name="city" id="320030" value="西郷">西郷
+        <p>岡山県</p>
+          <input type="checkbox" name="city" id="330010" value="岡山">岡山
+          <input type="checkbox" name="city" id="330020" value="津山">津山
+        <p>広島県</p>
+          <input type="checkbox" name="city" id="340010" value="広島">広島
+          <input type="checkbox" name="city" id="340020" value="庄原">庄原
+        <p>山口県</p>
+          <input type="checkbox" name="city" id="350010" value="下関">下関
+          <input type="checkbox" name="city" id="350020" value="山口">山口
+          <input type="checkbox" name="city" id="350030" value="柳井">柳井
+          <input type="checkbox" name="city" id="350040" value="萩">萩
+        <p>徳島県</p>
+          <input type="checkbox" name="city" id="360010" value="徳島">徳島
+          <input type="checkbox" name="city" id="360020" value="日和佐">日和佐
+        <p>香川県</p>
+          <input type="checkbox" name="city" id="370000" value="高松">高松
+        <p>愛媛県</p>
+          <input type="checkbox" name="city" id="380010" value="松山">松山
+          <input type="checkbox" name="city" id="380020" value="新居浜">新居浜
+          <input type="checkbox" name="city" id="380030" value="宇和島">宇和島
+        <p>高知県</p>
+          <input type="checkbox" name="city" id="390010" value="高知">高知
+          <input type="checkbox" name="city" id="390020" value="室戸岬">室戸岬
+          <input type="checkbox" name="city" id="390030" value="清水">清水
+        <p>福岡県</p>
+          <input type="checkbox" name="city" id="400010" value="福岡">福岡
+          <input type="checkbox" name="city" id="400020" value="八幡">八幡
+          <input type="checkbox" name="city" id="400030" value="飯塚">飯塚
+          <input type="checkbox" name="city" id="400040" value="久留米">久留米
+        <p>佐賀県</p>
+          <input type="checkbox" name="city" id="410010" value="佐賀">佐賀
+          <input type="checkbox" name="city" id="410020" value="伊万里">伊万里
+        <p>長崎県</p>
+          <input type="checkbox" name="city" id="420010" value="長崎">長崎
+          <input type="checkbox" name="city" id="420020" value="佐世保">佐世保
+          <input type="checkbox" name="city" id="420030" value="厳原">厳原
+          <input type="checkbox" name="city" id="420040" value="福江">福江
+        <p>熊本県</p>
+          <input type="checkbox" name="city" id="430010" value="熊本">熊本
+          <input type="checkbox" name="city" id="430020" value="阿蘇乙姫">阿蘇乙姫
+          <input type="checkbox" name="city" id="430030" value="牛深">牛深
+          <input type="checkbox" name="city" id="430040" value="人吉">人吉
+        <p>大分県</p>
+          <input type="checkbox" name="city" id="440010" value="大分">大分
+          <input type="checkbox" name="city" id="440020" value="中津">中津
+          <input type="checkbox" name="city" id="440030" value="日田">日田
+          <input type="checkbox" name="city" id="440040" value="佐伯">佐伯
+        <p>宮崎県</p>
+          <input type="checkbox" name="city" id="450010" value="宮崎">宮崎
+          <input type="checkbox" name="city" id="450020" value="延岡">延岡
+          <input type="checkbox" name="city" id="450030" value="都城">都城
+          <input type="checkbox" name="city" id="450040" value="高千穂">高千穂
+        <p>鹿児島県</p>
+          <input type="checkbox" name="city" id="460010" value="鹿児島">鹿児島
+          <input type="checkbox" name="city" id="460020" value="鹿屋">鹿屋
+          <input type="checkbox" name="city" id="460030" value="種子島">種子島
+          <input type="checkbox" name="city" id="460040" value="名瀬">名瀬
+        <p>沖縄県</p>
+          <input type="checkbox" name="city" id="471010" value="那覇">那覇
+          <input type="checkbox" name="city" id="471020" value="名護">名護
+          <input type="checkbox" name="city" id="471030" value="久米島">久米島
+          <input type="checkbox" name="city" id="472000" value="南大東">南大東
+          <input type="checkbox" name="city" id="473000" value="宮古島">宮古島
+          <input type="checkbox" name="city" id="474010" value="石垣島">石垣島
+          <input type="checkbox" name="city" id="474020" value="与那国島">与那国島
+      </div>
+    </form>
+  </div>
+  <div class="display-btn">
+    <button id="btn">表示する</button>
+  </div>
+  
+  <div class="box">
+    <p>今日<span id="tiikimei"></span>の天気は、 <span id="today"></span> です。</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
